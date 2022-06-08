@@ -52,9 +52,9 @@ background-color: whitesmoke;
 .nav {
   grid-area: nav;
   width: 100%;
-  color:rgb(255, 255, 255);
-  
+  color:rgb(255, 255, 255);  
 }
+
 
 
 .main {
@@ -62,7 +62,7 @@ background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px;
 }
 .subtitulos {
   font-family: "Lato", sans-serif;
@@ -78,16 +78,15 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 20px;
+  margin: 10px;
 }
 
 .pNoticia {
   width: 50%;
   font-family: "Merriweather", serif;
   font-size: 15px;
-  margin: 10px;
   text-align: left;
-  padding: 0 30px ;
+  margin: 20px ;
 }
 
 .mainPag {
@@ -243,10 +242,8 @@ h3 {
 footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background-color: rgb(2, 2, 2);
   font-family: "Open Sans", sans-serif;
-  color: rgb(252, 96, 96);
+  
 }
 .sponsor {
   display: flex;
@@ -294,7 +291,6 @@ footer {
   .pNoticia{
     font-size: 12px;
     width: 100%;
-    padding: 0 10px;
    }
    .subtitulos {
      font-size: 30px;
@@ -336,7 +332,7 @@ footer {
   }
   .pNoticia{
    width: 100%;
-   padding: 0 15px;
+   
    font-size: 10px;
    
   }
