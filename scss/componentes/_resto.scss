@@ -34,9 +34,8 @@ background-color: $bg-white;
 
 .main {
   grid-area: main;
-  display: flex;
+  @extend %flexcol;
   justify-content: space-between;
-  flex-direction: column;
   margin: 10px;
 }
 .subtitulos {
@@ -50,28 +49,27 @@ h3 {
   text-align: center;
 }
 .Noticia {
-  display: flex;
+  @extend %flexrow; 
   justify-content: space-around;
-  flex-direction: row;
+  align-items: center;
+  
   margin: 10px;
 }
 
 .pNoticia {
-  width: 50%;
+  width: 60%;
   font-family: "Merriweather", serif;
   font-size: 15px;
   text-align: left;
   margin: 20px ;
 }
 
-.mainPag {
-    
-  display: flex;
+.mainPag {   
+  @extend %flexcol;
   margin: 50px 0 0 ;
   width: 100%;
   color: whitesmoke;
   background-color: rgb(8, 8, 8);
-  flex-wrap: wrap row;
   align-items: center;
   justify-content: center;
 }
@@ -90,14 +88,12 @@ h3 {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
+  @extend %flexcol;
   font-family: "Open Sans", sans-serif;
   
 }
 .sponsor {
-  display: flex;
-  flex-direction: row;
+  @extend %flexrow;
   justify-content: space-around;
   background-color: $bg-white;
   

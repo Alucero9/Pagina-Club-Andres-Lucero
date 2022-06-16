@@ -1,0 +1,6 @@
+@mixin Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:$bg-black;
+}
