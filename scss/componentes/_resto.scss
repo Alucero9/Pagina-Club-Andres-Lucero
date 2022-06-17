@@ -10,7 +10,7 @@
   display: grid;
   height: 100%;
   gap: 10px;
-  grid-template-columns: 2fr 0.2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 0.3fr 0.1fr 2fr 0.1fr;
   grid-template-areas:
     "header header"
@@ -35,7 +35,7 @@ background-color: $bg-white;
 .main {
   grid-area: main;
   @extend %flexcol;
-  justify-content: space-between;
+  align-items: center;
   margin: 10px;
 }
 .subtitulos {
@@ -52,12 +52,18 @@ h3 {
   @extend %flexrow; 
   justify-content: space-around;
   align-items: center;
-  
   margin: 10px;
+}
+.NoticiaIndex {
+  @extend %flexcol; 
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px; 
+
 }
 
 .pNoticia {
-  width: 60%;
+  width: 90%;
   font-family: "Merriweather", serif;
   font-size: 15px;
   text-align: left;
@@ -105,7 +111,7 @@ footer {
     gap: 10px;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 0.1fr 4fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 2fr 0.1fr;
     grid-template-areas:
       "header "
       "nav"

@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 
-footer, .mainPag, .main {
+footer, .mainPag, .NoticiaIndex, .main {
   display: flex;
   flex-direction: column;
 }
@@ -19,7 +19,7 @@ footer, .mainPag, .main {
   display: grid;
   height: 100%;
   gap: 10px;
-  grid-template-columns: 2fr 0.2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 0.3fr 0.1fr 2fr 0.1fr;
   grid-template-areas: "header header" "nav nav" "main asd" "footer footer";
 }
@@ -36,7 +36,7 @@ body {
 
 .main {
   grid-area: main;
-  justify-content: space-between;
+  align-items: center;
   margin: 10px;
 }
 
@@ -58,8 +58,14 @@ h3 {
   margin: 10px;
 }
 
+.NoticiaIndex {
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
 .pNoticia {
-  width: 60%;
+  width: 90%;
   font-family: "Merriweather", serif;
   font-size: 15px;
   text-align: left;
@@ -102,7 +108,7 @@ footer {
     gap: 10px;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 0.1fr 4fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 2fr 0.1fr;
     grid-template-areas: "header " "nav" "asd" "main" "footer";
   }
   .Noticia {
@@ -199,6 +205,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   margin: 0 10px;
   background-color: black;
   color: #E7E6EF;
@@ -208,6 +215,9 @@ aside .divAsd {
   flex-direction: column;
   text-align: center;
   margin: 20px 0;
+}
+aside .divTwt {
+  width: 80%;
 }
 aside .bounce-in-right {
   -webkit-animation: bounce-in-right 2.1s both;
@@ -319,10 +329,12 @@ aside .bounce-in-right {
 }
 @media only screen and (max-width: 800px) {
   aside .divAsd {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 10px 0;
+  }
+  aside .divTwt {
+    width: 60%;
   }
 }
 

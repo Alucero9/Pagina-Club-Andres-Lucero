@@ -3,6 +3,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin: 0 10px;
     background-color: $bg-black;
     color: $bg-white;
@@ -13,6 +14,10 @@ aside{
         text-align: center;
         margin: 20px 0;
       }
+     .divTwt{
+             width: 80%;
+             
+     } 
     .bounce-in-right {
           -webkit-animation: bounce-in-right 2.1s both;
                   animation: bounce-in-right 2.1s both;
@@ -123,12 +128,14 @@ aside{
     
     }
     @media only screen and (max-width: 800px) {
-    .divAsd{
-        display: flex;
+    .divAsd{       
         flex-direction: row;
         justify-content: center;
         margin: 10px 0;
-      }
+        }
+     .divTwt{
+             width: 60%;   
+        } 
   
   }
 }
