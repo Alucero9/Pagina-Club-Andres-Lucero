@@ -1,0 +1,11 @@
+footer {
+  grid-area: footer;
+  @extend %flexcol;
+  font-family: "Open Sans", sans-serif;
+}
+.sponsor {
+  @extend %flexrow;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+}

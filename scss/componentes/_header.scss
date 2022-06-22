@@ -1,57 +1,53 @@
 header {
-    
-    grid-area: header;
-    @include Header;
-    
-    .headerTitulo {
-        color: rgb(245, 235, 235);
-        font-family: "Lato", sans-serif;
-        text-align: center;
-        font-size: 50px;
-        animation: flipInX; 
-        animation-duration: 2s;
-        &:hover{
-          color:red
-        } 
-      }
-       
-    .headerImg {
-        margin: 10px auto;
-        width: 100%;
-        display: block;
-      }  
-    .headerImgdos {
-        margin: 10px auto;
-        width: 100%;
-        display: none;
-      }
-    @media only screen and (max-width: 800px) { 
-      .headerTitulo{
-        font-size: 40px;
-      }
-      .headerImg {
-        display: none;
-      }
-      .headerImgdos {
-        margin: 10px auto;
-        width: 90%;
-        display: block;
-      }
+  grid-area: header;
+  @include Header;
+
+  .headerTitulo {
+    color: rgb(245, 235, 235);
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    animation: flipInX;
+    animation-duration: 2s;
+    &:hover {
+      color: red;
     }
-    @media only screen and (max-width: 480px) { 
-      .headerTitulo{
-        font-size: 30px;
-      }
-      .headerImg {
-        display: none;
-      }
-      .headerImgdos {
-        margin: 10px auto;
-        width: 100%;
-        display: block;
-      }  
+  }
+
+  .headerImg {
+    margin: 10px auto;
+    width: 100%;
+    display: block;
+  }
+  .headerImgdos {
+    margin: 10px auto;
+    width: 100%;
+    display: none;
+  }
+  @media only screen and (max-width: 800px) {
+    .headerTitulo {
+      font-size: 40px;
+    }
+    .headerImg {
+      display: none;
+    }
+    .headerImgdos {
+      margin: 10px auto;
+      width: 90%;
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .headerTitulo {
+      font-size: 30px;
+    }
+    .headerImg {
+      display: none;
+    }
+    .headerImgdos {
+      margin: 10px auto;
+      width: 100%;
+      display: block;
+    }
   }
 }
-  
-  
-  

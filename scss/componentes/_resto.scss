@@ -3,7 +3,6 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-
 }
 
 #container {
@@ -19,24 +18,23 @@
     "footer footer";
 }
 body {
-background-color: $bg-white;
-  
+  background-color: $bg-white;
 }
-
-
-.nav {
-  grid-area: nav;
-  width: 100%;
-  color:rgb(255, 255, 255);  
-}
-
-
 
 .main {
   grid-area: main;
   @extend %flexcol;
   align-items: center;
   margin: 10px;
+}
+.mainPag {
+  @extend %flexcol;
+  margin: 50px 0 0;
+  width: 100%;
+  color: whitesmoke;
+  background-color: rgb(8, 8, 8);
+  align-items: center;
+  justify-content: center;
 }
 .subtitulos {
   font-family: "Lato", sans-serif;
@@ -49,37 +47,38 @@ h3 {
   text-align: center;
 }
 .Noticia {
-  @extend %flexrow; 
+  @extend %flexrow;
+  background-color: $bg-black;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  border-radius: 20px;
+  color: $bg-white;
+  padding: 30px;
+  width: 80%;
+}
+.NoticiaIndex {
+  @extend %flexcol;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
 }
-.NoticiaIndex {
-  @extend %flexcol; 
-  justify-content: space-around;
-  align-items: center;
-  margin: 10px; 
-
+.pNoticiaIndex {
+  width: 90%;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  text-align: left;
+  margin: 20px;
+  background-color: $bg-white;
 }
-
 .pNoticia {
   width: 90%;
   font-family: "Merriweather", serif;
   font-size: 15px;
   text-align: left;
-  margin: 20px ;
+  margin: 20px;
+  background-color: $bg-black;
 }
-
-.mainPag {   
-  @extend %flexcol;
-  margin: 50px 0 0 ;
-  width: 100%;
-  color: whitesmoke;
-  background-color: rgb(8, 8, 8);
-  align-items: center;
-  justify-content: center;
-}
-
 .divP {
   width: 480px;
   height: 100px;
@@ -88,30 +87,13 @@ h3 {
   font-family: "Open Sans", sans-serif;
 }
 
-.footer {
-  grid-area: footer;
-  
-}
-
-footer {
-  @extend %flexcol;
-  font-family: "Open Sans", sans-serif;
-  
-}
-.sponsor {
-  @extend %flexrow;
-  justify-content: space-around;
-  background-color: $bg-white;
-  
-}
-
 @media only screen and (max-width: 800px) {
   #container {
     display: grid;
     gap: 10px;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 0.5fr 2fr 0.1fr;
     grid-template-areas:
       "header "
       "nav"
@@ -119,20 +101,18 @@ footer {
       "main"
       "footer";
   }
-  
-  
-  .Noticia{
+
+  .Noticia {
     flex-direction: column;
   }
-  
-  .pNoticia{
+
+  .pNoticia {
     font-size: 12px;
-    width: 100%;
-   }
-   .subtitulos {
-     font-size: 30px;
- }
-  
+    
+  }
+  .subtitulos {
+    font-size: 30px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -149,21 +129,16 @@ footer {
       "main"
       "footer";
   }
-  
-  nav ul li {
-    width: 100%;
-    
-  }
+
   .Noticia {
-    flex-direction: column; 
+    flex-direction: column;
   }
-  .pNoticia{
-   width: 100%;
-   
-   font-size: 10px;
-   
+  .pNoticia {
+    
+
+    font-size: 10px;
   }
   .subtitulos {
     font-size: 20px;
-}
+  }
 }
